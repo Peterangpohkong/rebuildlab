@@ -374,8 +374,8 @@ ul{margin:0;padding:0;list-style:none}
 .case__num{color:var(--muted-2);font-size:.7rem;letter-spacing:.08em}
 .case__body{display:flex;flex-direction:column;gap:10px;flex:1}
 .case h3{margin:0;font-size:1.35rem;letter-spacing:-.02em;line-height:1.15}
-.case__what{margin:0;color:#D6D0C8;font-size:.95rem;line-height:1.55}
-.case__why{margin:0;color:var(--muted-2);font-size:.86rem;line-height:1.55;flex:1}
+.case__what{margin:0;color:#D6D0C8;font-size:.95rem;line-height:1.55;flex:1}
+.case__why{margin:0;color:var(--muted-2);font-size:.86rem;line-height:1.55}
 .case__link{
   margin-top:14px;display:inline-flex;align-items:center;gap:8px;
   font-size:.9rem;color:var(--text);text-decoration:none;
@@ -385,7 +385,7 @@ ul{margin:0;padding:0;list-style:none}
 .case__link:hover{border-color:rgba(255,255,255,.45)}
 .case__link i{font-style:normal;color:var(--muted-2)}
 .proof__foot{
-  margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px
+  margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:18px
 }
 .proof__foot p{margin:0;color:var(--muted);max-width:36ch;line-height:1.5}
 
