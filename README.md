@@ -54,6 +54,6 @@ Everything is disabled under `prefers-reduced-motion: reduce`.
 ## Placeholders to swap before launch
 
 - Portfolio links: `relocal.co`, `trypitch.co`, `open.cx`, `rebuildlab.co`.
-- `hello@rebuildlab.co` (used in the CTA, footer and mailto links).
+- `p@rebuildlab.co` (used in the CTA, footer and mailto links).
 - `assets/og.png` is referenced by the Open Graph tags but not included. Add a 1200×630 share image.
 - The newsletter form validates and shows a message client-side only; wire it to your provider's endpoint in `js/main.js` (section 14).
