@@ -408,15 +408,16 @@ ul{margin:0;padding:0;list-style:none}
 .team__intro h2{font-size:clamp(1.85rem,3.5vw,2.75rem);max-width:18ch;letter-spacing:-.03em;line-height:1.12}
 .team__intro p{margin-top:16px;color:var(--muted);max-width:48ch;line-height:1.65;font-size:1rem}
 .team__proof{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;margin:0;padding:0;border:0}
+.team__proof picture{display:block;line-height:0}
 .team__proof img{
   display:block;height:36px;width:auto;max-width:140px;object-fit:contain;
   opacity:.9;transition:opacity .25s ease
 }
 .team__proof img[alt="McKinsey & Company"]{height:42px;max-width:150px}
-.team__proof img[alt="Y Combinator"]{width:36px;max-width:36px}
+.team__proof img[alt="Y Combinator"]{width:36px;max-width:36px;height:36px}
 .team__proof img[alt="Google"],
 .team__proof img[alt="Grab"]{height:32px;max-width:120px}
-.team__proof img:hover{opacity:1}
+.team__proof picture:hover img{opacity:1}
 .faq__body a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 
 /* ── FAQ ───────────────────────────────────────────────────── */
@@ -572,6 +573,7 @@ ul{margin:0;padding:0;list-style:none}
   .foot__grid{grid-template-columns:1fr;gap:36px}
   .foot__brand,.foot__sub{grid-column:span 1}
   .foot{padding-bottom:max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))}
+  .grain{display:none}
 }
 
 @media (prefers-reduced-motion:reduce){

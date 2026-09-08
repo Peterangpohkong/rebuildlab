@@ -289,10 +289,14 @@
      ========================================================= */
   function DotWave(canvas, opt) {
     opt = opt || {};
-    var ctx = canvas.getContext('2d');
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var ctx = canvas.getContext('2d', { alpha: true });
+    var lowPower = window.matchMedia('(max-width:720px)').matches
+      || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
+    var dpr = Math.min(window.devicePixelRatio || 1, lowPower ? 1.25 : 2);
     var w = 0, h = 0, t = 0, raf = null, visible = false;
-    var COLS = opt.cols || 96, ROWS = opt.rows || 52;
+    var density = lowPower ? 0.58 : 1;
+    var COLS = Math.max(36, Math.round((opt.cols || 96) * density));
+    var ROWS = Math.max(22, Math.round((opt.rows || 52) * density));
     var amp = opt.amp || 0.42, speed = opt.speed || 0.0055, spread = opt.spread || 2.9;
     var camY = opt.camY != null ? opt.camY : 0.62;
     var focal = opt.focal || 0.92;
@@ -371,10 +375,12 @@
      CANVAS 2 · orbiting particle ring
      ========================================================= */
   function DotRing(canvas) {
-    var ctx = canvas.getContext('2d');
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var ctx = canvas.getContext('2d', { alpha: true });
+    var lowPower = window.matchMedia('(max-width:720px)').matches
+      || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
+    var dpr = Math.min(window.devicePixelRatio || 1, lowPower ? 1.25 : 2);
     var w, h, t = 0, raf = null, visible = false;
-    var N = 260;
+    var N = lowPower ? 140 : 260;
     var seeds = [];
     for (var i = 0; i < N; i++) {
       seeds.push({

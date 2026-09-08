@@ -17,12 +17,16 @@
 <meta name="twitter:card" content="summary_large_image" />
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="preconnect" href="https://api.fontshare.com" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
-<link rel="stylesheet" href="css/styles.css?v=20260908g" />
+<!-- Display font is critical for the hero title -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700&display=swap" />
+<!-- Body / mono fonts: non-blocking -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" /></noscript>
+<link rel="stylesheet" href="css/styles.css?v=20260908h" />
+<link rel="preload" href="js/main.js?v=20260908h" as="script" />
 </head>
 <body>
 
@@ -343,10 +347,22 @@
     </div>
 
     <div class="team__proof" data-reveal data-reveal-delay="120" aria-label="Background signals">
-      <img src="assets/logos/mckinsey.png" alt="McKinsey &amp; Company" height="42">
-      <img src="assets/logos/google.png" alt="Google" height="32">
-      <img src="assets/logos/ycombinator.png" alt="Y Combinator" height="36" width="36">
-      <img src="assets/logos/grab.png" alt="Grab" height="32">
+      <picture>
+        <source type="image/webp" srcset="assets/logos/mckinsey.webp" />
+        <img src="assets/logos/mckinsey.png" alt="McKinsey &amp; Company" width="150" height="46" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="assets/logos/google.webp" />
+        <img src="assets/logos/google.png" alt="Google" width="120" height="40" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="assets/logos/ycombinator.webp" />
+        <img src="assets/logos/ycombinator.png" alt="Y Combinator" width="36" height="36" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="assets/logos/grab.webp" />
+        <img src="assets/logos/grab.png" alt="Grab" width="120" height="45" loading="lazy" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
@@ -451,6 +467,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20260908h" defer></script>
 </body>
 </html>
