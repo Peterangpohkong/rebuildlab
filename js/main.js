@@ -158,7 +158,7 @@
   /* ---------------------------------------------------------
      9. Seamless marquees (duplicate content once)
      --------------------------------------------------------- */
-  $$('.marquee__track, .vscroll__track').forEach(function (track) {
+  $$('.vscroll__track').forEach(function (track) {
     track.appendChild(track.firstElementChild.cloneNode(true));
   });
 

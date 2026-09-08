@@ -218,21 +218,6 @@ ul{margin:0;padding:0;list-style:none}
 .step h3 em{font-style:normal;color:var(--muted-2);font-size:.95rem}
 .step p{margin-top:12px;color:var(--muted);font-size:.88rem;max-width:28ch;line-height:1.55}
 
-/* ── LOGOS ─────────────────────────────────────────────────── */
-.logos{padding:44px 0 48px;background:var(--bg-2);border-bottom:1px solid var(--line)}
-.logos__label{color:var(--muted-2);font-size:.86rem;margin-bottom:22px}
-.marquee{position:relative;overflow:hidden}
-.marquee__track{display:flex;width:max-content;animation:slide 38s linear infinite}
-.marquee:hover .marquee__track{animation-play-state:paused}
-.marquee__group{display:flex;align-items:center;gap:66px;padding-right:66px}
-@keyframes slide{to{transform:translateX(-50%)}}
-.logo{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-size:1.5rem;font-weight:700;
-  color:rgba(244,240,234,.62);letter-spacing:-.02em;white-space:nowrap;transition:color .35s ease;text-decoration:none}
-.logo:hover{color:var(--text)}
-.logo svg{width:22px;height:22px}
-.marquee__mask{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(90deg,var(--bg-2),transparent 12%,transparent 88%,var(--bg-2))}
-
 /* ── STATEMENT ─────────────────────────────────────────────── */
 .statement{position:relative;padding:80px 0 0;overflow:hidden}
 .statement__text{font-family:var(--font-display);font-weight:700;letter-spacing:-.03em;
@@ -504,14 +489,14 @@ ul{margin:0;padding:0;list-style:none}
   .foot__brand,.foot__sub{grid-column:span 2}
 }
 @media (max-width:720px){
-  :root{--pad:22px}
+  :root{--pad:28px}
   .shell{
-    padding-inline:max(22px, calc(env(safe-area-inset-left, 0px) + 18px))
-      max(22px, calc(env(safe-area-inset-right, 0px) + 18px))
+    padding-inline:max(28px, calc(env(safe-area-inset-left, 0px) + 22px))
+      max(28px, calc(env(safe-area-inset-right, 0px) + 22px))
   }
   .nav__inner,.hero__meta{
-    padding-inline:max(22px, calc(env(safe-area-inset-left, 0px) + 18px))
-      max(22px, calc(env(safe-area-inset-right, 0px) + 18px))
+    padding-inline:max(28px, calc(env(safe-area-inset-left, 0px) + 22px))
+      max(28px, calc(env(safe-area-inset-right, 0px) + 22px))
   }
   .steps__grid{grid-template-columns:1fr}
   .step{border-right:0;border-bottom:1px solid var(--line);padding:32px 0}
@@ -561,8 +546,15 @@ ul{margin:0;padding:0;list-style:none}
   .statement__text{font-size:clamp(1.45rem,6.5vw,2rem);line-height:1.25}
   .statement__viz{height:min(22vh,180px);margin-top:28px}
   .stats,.stack,.faq,.team,.proof{padding-top:80px;padding-bottom:80px}
-  .stats__grid{grid-template-columns:1fr}
-  .stat{padding:28px 0 32px}
+  .stats__grid{
+    grid-template-columns:1fr;
+    border-left:0;
+    margin-top:40px
+  }
+  .stat{
+    padding:26px 4px 30px;
+    border-right:0
+  }
   .stat__icon{margin-bottom:18px}
   .stat strong{font-size:clamp(1.65rem,7vw,2.1rem)}
   .stat > span{font-size:.92rem;max-width:none}
