@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Rebuild Lab">
+  <!-- transparent background -->
+  <g transform="translate(48, 56)">
+    <g transform="scale(7.4)">
+      <path d="M4 20.5 12.5 4l3.6 7-4.6 9h6.4l3.7 7H4Z" fill="#F4F0EA"/>
+      <circle cx="21.2" cy="7.4" r="3.2" fill="#F4F0EA" opacity="0.55"/>
+    </g>
+  </g>
+  <text x="300" y="198" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="118" font-weight="600" letter-spacing="-1.5" fill="#F4F0EA">Rebuild Lab</text>
+</svg>
