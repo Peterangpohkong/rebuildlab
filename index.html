@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Rebuild Lab · We rebuild businesses with AI agents</title>
+<meta name="description" content="Rebuild Lab is an AI-native consultancy. We embed into your business and rebuild how it operates around AI agents. Often we begin with the website, then rebuild the operations underneath." />
+<meta name="theme-color" content="#0B0A09" />
+<link rel="canonical" href="https://rebuildlab.co/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rebuildlab.co/" />
+<meta property="og:site_name" content="Rebuild Lab" />
+<meta property="og:title" content="Rebuild Lab · We rebuild businesses with AI agents" />
+<meta property="og:description" content="An AI-native consultancy that embeds into your business and rebuilds how it operates around AI agents." />
+<meta property="og:image" content="https://rebuildlab.co/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-bar" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+<!-- ─────────────────────────── NAV ─────────────────────────── -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Rebuild Lab home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <path d="M4 20.5 12.5 4l3.6 7-4.6 9h6.4l3.7 7H4Z" fill="currentColor"/>
+        <circle cx="21.2" cy="7.4" r="3.2" fill="currentColor" opacity=".55"/>
+      </svg>
+      <span class="brand__word">Rebuild&nbsp;Lab</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <div class="menu">
+        <button class="menu__trigger" aria-expanded="false">Method <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="menu__panel">
+          <a href="#diagnose"><span class="menu__t">Diagnose</span><span class="menu__d">Map the real operation, not the org chart</span></a>
+          <a href="#rebuild"><span class="menu__t">Rebuild</span><span class="menu__d">AI agents and systems, shipped live</span></a>
+          <a href="#compound"><span class="menu__t">Compound</span><span class="menu__d">Keep improving adjacent workflows</span></a>
+        </div>
+      </div>
+      <div class="menu">
+        <button class="menu__trigger" aria-expanded="false">Work <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="menu__panel">
+          <a href="#proof"><span class="menu__t">Live work</span><span class="menu__d">Products and rebuilds you can open</span></a>
+          <a href="#stack"><span class="menu__t">Scope</span><span class="menu__d">Websites, ops, talent, finance</span></a>
+          <a href="#stats"><span class="menu__t">Approach</span><span class="menu__d">Embedded, recurring, design-led</span></a>
+          <a href="#team"><span class="menu__t">Team</span><span class="menu__d">Operators and builders behind the work</span></a>
+        </div>
+      </div>
+      <a href="#process">Process</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav__right">
+      <a class="btn btn--light btn--sm" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Start a rebuild</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobilemenu" aria-hidden="true">
+  <a href="#diagnose">Diagnose</a>
+  <a href="#rebuild">Rebuild</a>
+  <a href="#compound">Compound</a>
+  <a href="#process">Process</a>
+  <a href="#team">Team</a>
+  <a href="#proof">Work</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn--light" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Start a rebuild</span></a>
+</div>
+
+<main id="top">
+
+<!-- ─────────────────────────── HERO ─────────────────────────── -->
+<section class="hero">
+  <canvas class="hero__wave" id="heroWave" aria-hidden="true"></canvas>
+  <div class="hero__fade" aria-hidden="true"></div>
+
+  <div class="shell">
+    <a class="pill pill--announce" href="#rebuild" data-reveal>
+      <span class="pill__badge">New</span>
+      <span class="pill__sep"></span>
+      <span>Rebuild one workflow. Leave the agents running.</span>
+      <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4.4 3H9v4.6" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <h1 class="hero__title" data-split>
+      <span>We rebuild businesses</span>
+      <span>with AI agents</span>
+    </h1>
+
+    <p class="hero__sub" data-reveal data-reveal-delay="380">
+      Rebuild Lab is an AI-native consultancy. We embed into your operation and rebuild how
+      work actually gets done. Often we begin with the website, then rebuild the operations underneath.
+    </p>
+
+    <div class="hero__cta" data-reveal data-reveal-delay="500">
+      <a class="btn btn--light" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Start a rebuild</span></a>
+      <a class="btn btn--ghost" href="#proof"><span>See the work</span></a>
+    </div>
+  </div>
+
+  <div class="hero__meta" data-reveal data-reveal-delay="620">
+    <span class="dot-live" aria-hidden="true"></span>
+    <div class="hero__facts" id="heroFacts" aria-live="polite">
+      <span class="hero__fact is-active"><strong data-count="18">0</strong> AI agents live across client ops</span>
+      <span class="hero__fact">On average, businesses save <strong>30%</strong> in operating cost</span>
+      <span class="hero__fact"><strong data-count="22">0</strong> hours returned per week after rebuild</span>
+      <span class="hero__fact"><strong data-count="0">0</strong> theater decks shipped as deliverables</span>
+      <span class="hero__fact">First agent usually live in under <strong>6</strong> weeks</span>
+      <span class="hero__fact">Embedded with operators in <strong data-count="7">0</strong> live operations</span>
+      <span class="hero__fact"><strong data-count="4">0</strong> portfolio products you can open today</span>
+      <span class="hero__fact">Support handoffs cut by about <strong>40%</strong> after launch</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── STEPS ─────────────────────────── -->
+<section class="steps" id="process">
+  <div class="shell steps__grid">
+    <article class="step" data-reveal>
+      <h3><em>1.</em> Embed</h3>
+      <p>Work inside the business. Learn how the operation runs, not how the org chart says it runs.</p>
+    </article>
+    <article class="step" data-reveal data-reveal-delay="90">
+      <h3><em>2.</em> Diagnose</h3>
+      <p>Find where manual effort, handoffs and broken processes are costing time and margin.</p>
+    </article>
+    <article class="step" data-reveal data-reveal-delay="180">
+      <h3><em>3.</em> Rebuild</h3>
+      <p>Replace those processes with AI agents and rebuilt systems. Surface first, then inward.</p>
+    </article>
+    <article class="step" data-reveal data-reveal-delay="270">
+      <h3><em>4.</em> Compound</h3>
+      <p>Keep adding value after launch. Each rebuild makes the next one easier and more valuable.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ─────────────────────────── LOGOS ─────────────────────────── -->
+<section class="logos">
+  <div class="shell">
+    <p class="logos__label" data-reveal>Live work our prospects are asked to judge</p>
+  </div>
+  <div class="marquee" data-reveal>
+    <div class="marquee__track" id="logoTrack">
+      <div class="marquee__group">
+        <a class="logo" href="https://relocal.co" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.6"/></svg> Relocal</a>
+        <a class="logo" href="https://trypitch.co" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.2 6.8L22 12l-6.8 3.2L12 22l-3.2-6.8L2 12l6.8-3.2z" fill="currentColor"/></svg> Pitch</a>
+        <a class="logo" href="https://open.cx" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.4" fill="currentColor"/></svg> Open</a>
+        <a class="logo" href="https://rebuildlab.co" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18L12 4l8 14z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Rebuild Lab</a>
+        <a class="logo" href="https://relocal.co" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12a6 6 0 1 1 12 0 6 6 0 0 1-12 0z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v4M12 18v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Relocal</a>
+        <a class="logo" href="https://trypitch.co" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V5h6a4.5 4.5 0 0 1 0 9H5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg> Pitch</a>
+      </div>
+    </div>
+    <div class="marquee__mask" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── STATEMENT ─────────────────────────── -->
+<section class="statement">
+  <div class="shell">
+    <p class="statement__text" data-words>
+      You already know where the work gets stuck.
+      We rebuild it with you, ship the agents, and stay for what comes next.
+    </p>
+  </div>
+  <div class="statement__viz">
+    <canvas id="midWave" aria-hidden="true"></canvas>
+  </div>
+</section>
+
+<!-- ─────────────────────────── MODULES ─────────────────────────── -->
+<section class="modules">
+
+  <!-- Diagnose -->
+  <div class="module" id="diagnose">
+    <div class="shell module__grid">
+      <div class="module__copy">
+        <div class="module__sticky">
+          <span class="eyebrow" data-reveal>01 · Diagnose</span>
+          <h2 data-reveal data-reveal-delay="60">Find where the operation is leaking</h2>
+          <p data-reveal data-reveal-delay="120">
+            We sit inside the business and map work as it actually happens, not the org chart,
+            not the slide. Where time leaks, where handoffs break, and which AI bets are theater.
+            You leave with a clear rebuild plan or a clean no.
+          </p>
+          <ul class="ticks">
+            <li data-reveal data-reveal-delay="180"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Shadows operators, not stakeholders only</li>
+            <li data-reveal data-reveal-delay="220"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Names constraints nobody put in the brief</li>
+            <li data-reveal data-reveal-delay="260"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> A rebuild plan your operators can run</li>
+          </ul>
+          <a class="link-arrow" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="300">Book a diagnostic <i><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.4 3.4L11 7l-3.6 3.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+        </div>
+      </div>
+
+      <div class="module__viz" data-reveal>
+        <div class="panel panel--scan" data-tilt>
+          <div class="panel__bar"><span class="panel__dots"><i></i><i></i><i></i></span><span class="mono">diagnose · live operations</span><span class="chip chip--live">scanning</span></div>
+          <div class="scanline" aria-hidden="true"></div>
+          <ul class="findings">
+            <li><span class="sev sev--high">high</span><span class="mono">website / storefront</span><em>undersells the real operation</em></li>
+            <li><span class="sev sev--high">high</span><span class="mono">ops / order handoffs</span><em>retyped across 4 tools</em></li>
+            <li><span class="sev sev--med">med</span><span class="mono">recruiting / intake</span><em>forms, then Slack, then nowhere</em></li>
+            <li><span class="sev sev--med">med</span><span class="mono">finance / invoicing</span><em>exceptions eat the week</em></li>
+            <li><span class="sev sev--low">low</span><span class="mono">support / replies</span><em>same answers, no memory</em></li>
+          </ul>
+          <div class="panel__foot">
+            <div><strong data-count="5">0</strong><span>surfaces in scope</span></div>
+            <div><strong data-count="1">0</strong><span>sprint to start</span></div>
+            <div><strong data-count="0">0</strong><span>theater decks</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rebuild -->
+  <div class="module module--alt" id="rebuild">
+    <div class="shell module__grid module__grid--flip">
+      <div class="module__copy">
+        <div class="module__sticky">
+          <span class="eyebrow" data-reveal>02 · Rebuild</span>
+          <h2 data-reveal data-reveal-delay="60">Replace broken workflows with working agents</h2>
+          <p data-reveal data-reveal-delay="120">
+            We usually start with the website, then rebuild the work behind it: recruiting,
+            operations, and finance. Your operators stay involved. You get working systems and
+            agents, not another slide deck.
+          </p>
+          <ul class="ticks">
+            <li data-reveal data-reveal-delay="180"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Websites and stores that sell the real offer</li>
+            <li data-reveal data-reveal-delay="220"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Recruiting, workforce, and day-to-day ops</li>
+            <li data-reveal data-reveal-delay="260"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Finance workflows rebuilt end to end</li>
+          </ul>
+          <a class="link-arrow" href="#proof" data-reveal data-reveal-delay="300">See live work <i><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.4 3.4L11 7l-3.6 3.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+        </div>
+      </div>
+
+      <div class="module__viz" data-reveal>
+        <canvas class="ring" id="ringCanvas" aria-hidden="true"></canvas>
+        <div class="panel panel--migrate" data-tilt>
+          <div class="panel__bar"><span class="panel__dots"><i></i><i></i><i></i></span><span class="mono">rebuild · week 6</span><span class="chip chip--ok">live</span></div>
+          <div class="bars">
+            <div class="bar"><span>Website</span><i data-bar="100"><b></b></i><em>live</em></div>
+            <div class="bar"><span>Support</span><i data-bar="72"><b></b></i><em>72%</em></div>
+            <div class="bar"><span>Ops</span><i data-bar="48"><b></b></i><em>48%</em></div>
+            <div class="bar"><span>Talent</span><i data-bar="28"><b></b></i><em>28%</em></div>
+            <div class="bar"><span>Finance</span><i data-bar="12"><b></b></i><em>queued</em></div>
+          </div>
+          <div class="commits">
+            <span class="mono">agents in production</span>
+            <div class="commits__row" id="commitRow" aria-hidden="true"></div>
+            <strong class="mono"><span data-count="4">0</span></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compound -->
+  <div class="module" id="compound">
+    <div class="shell module__grid">
+      <div class="module__copy">
+        <div class="module__sticky">
+          <span class="eyebrow" data-reveal>03 · Compound</span>
+          <h2 data-reveal data-reveal-delay="60">Keep going after the first launch</h2>
+          <p data-reveal data-reveal-delay="120">
+            We stay after go-live and rebuild the next part of the business. Clients keep working
+            with us because each rebuild makes the next one easier and more valuable, not because
+            of a lock-in contract.
+          </p>
+          <ul class="ticks">
+            <li data-reveal data-reveal-delay="180"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Still in the room after launch</li>
+            <li data-reveal data-reveal-delay="220"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Each rebuild makes the next one cheaper</li>
+            <li data-reveal data-reveal-delay="260"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.6l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Your team owns it; we keep improving it</li>
+          </ul>
+          <a class="link-arrow" href="#faq" data-reveal data-reveal-delay="300">How engagements work <i><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.4 3.4L11 7l-3.6 3.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+        </div>
+      </div>
+
+      <div class="module__viz" data-reveal>
+        <div class="panel panel--health" data-tilt>
+          <div class="panel__bar"><span class="panel__dots"><i></i><i></i><i></i></span><span class="mono">compound · ongoing</span><span class="chip chip--ok">green</span></div>
+          <div class="health">
+            <div class="health__row"><span>Workflows live</span><div class="spark" data-spark="1,1,2,2,3,3,4,4,5,5,6,7"></div><strong>7</strong></div>
+            <div class="health__row"><span>Hours returned / wk</span><div class="spark" data-spark="4,6,8,9,11,12,14,15,16,18,19,22"></div><strong>22</strong></div>
+            <div class="health__row"><span>Manual handoffs</span><div class="spark" data-spark="18,16,14,12,11,9,8,6,5,4,3,2"></div><strong>2</strong></div>
+          </div>
+          <div class="uptime">
+            <span class="mono">agents answering · 30 days</span>
+            <div class="uptime__bars" id="uptimeBars" aria-hidden="true"></div>
+            <strong class="mono">99.9%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── STACK ─────────────────────────── -->
+<section class="stack" id="stack">
+  <div class="shell stack__grid">
+    <div class="stack__copy">
+      <h2 data-reveal>Where work gets stuck, we rebuild</h2>
+      <p data-reveal data-reveal-delay="80">
+        Websites and stores. Recruiting. Workforce. Day-to-day operations. Finance.
+        If customers are ready but the tools and processes are messy, that is usually where we start.
+      </p>
+      <a class="link-arrow" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="140">Ask about yours <i><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.4 3.4L11 7l-3.6 3.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+      <div class="stack__counts">
+        <div data-reveal data-reveal-delay="200"><strong data-count="5">0</strong><span>areas we rebuild</span></div>
+        <div data-reveal data-reveal-delay="250"><strong data-count="0">0</strong><span>slide decks as the deliverable</span></div>
+      </div>
+    </div>
+
+    <div class="stack__viz" data-reveal>
+      <div class="panel panel--sources">
+        <div class="panel__bar"><span class="mono">in scope</span><span class="chip chip--live">active</span></div>
+        <div class="vscroll" id="vscroll">
+          <div class="vscroll__track">
+            <div class="vscroll__group">
+              <div class="src"><i class="src__mark" style="--m:#e0684a">W</i><span>Website &amp; e-commerce<em class="mono">storefront · booking · catalog</em></span><b class="mono">surface</b></div>
+              <div class="src"><i class="src__mark" style="--m:#5b8def">R</i><span>Recruiting &amp; talent<em class="mono">intake · screening · routing</em></span><b class="mono">agents</b></div>
+              <div class="src"><i class="src__mark" style="--m:#4fbf8b">F</i><span>Workforce management<em class="mono">shifts · coverage · handoffs</em></span><b class="mono">ops</b></div>
+              <div class="src"><i class="src__mark" style="--m:#c78bea">O</i><span>Operations automation<em class="mono">orders · exceptions · follow-ups</em></span><b class="mono">rebuild</b></div>
+              <div class="src"><i class="src__mark" style="--m:#e6b35a">$</i><span>Financial operations<em class="mono">invoices · matching · close</em></span><b class="mono">queued</b></div>
+              <div class="src"><i class="src__mark" style="--m:#7fd1e0">S</i><span>Support &amp; inbox<em class="mono">Open · replies · memory</em></span><b class="mono">live</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel__foot panel__foot--tight">
+          <div><strong data-count="4">0</strong><span>live products to review</span></div>
+          <div><strong data-count="1">0</strong><span>operator in every rebuild</span></div>
+          <a class="btn btn--ghost btn--sm" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Add your workflow</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── PROOF ─────────────────────────── -->
+<section class="proof" id="proof">
+  <div class="shell">
+    <div class="proof__intro">
+      <span class="eyebrow" data-reveal>Case studies</span>
+      <h2 data-reveal data-reveal-delay="40">Live work you can open</h2>
+      <p data-reveal data-reveal-delay="90">
+        These are live products, not decks. Click through, judge the quality, then book a call
+        if the bar feels right for your business.
+      </p>
+    </div>
+
+    <div class="cases" data-reveal data-reveal-delay="120">
+      <article class="case">
+        <span class="case__num mono">01</span>
+        <div class="case__body">
+          <h3>Pitch</h3>
+          <p class="case__what">Turns a company URL into a narrated product demo in minutes.</p>
+          <p class="case__why">Shows how we ship something a prospect can open, instead of another roadmap slide.</p>
+          <a class="case__link" href="https://trypitch.co" target="_blank" rel="noopener noreferrer">Open trypitch.co <i aria-hidden="true">→</i></a>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case__num mono">02</span>
+        <div class="case__body">
+          <h3>Open</h3>
+          <p class="case__what">AI customer support that has to answer real tickets on a normal Tuesday.</p>
+          <p class="case__why">Proof that agents only count when they hold up in production, not in a demo.</p>
+          <a class="case__link" href="https://open.cx" target="_blank" rel="noopener noreferrer">Open open.cx <i aria-hidden="true">→</i></a>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case__num mono">03</span>
+        <div class="case__body">
+          <h3>Relocal</h3>
+          <p class="case__what">A live marketplace surface in the same portfolio we show prospects.</p>
+          <p class="case__why">You judge the product itself, not a process document about how we work.</p>
+          <a class="case__link" href="https://relocal.co" target="_blank" rel="noopener noreferrer">Open relocal.co <i aria-hidden="true">→</i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="proof__foot" data-reveal data-reveal-delay="180">
+      <p>If this is the standard you want for your operation, talk to us.</p>
+      <a class="btn btn--light" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Book a call</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── STATS ─────────────────────────── -->
+<section class="stats" id="stats">
+  <div class="shell">
+    <h2 class="stats__head" data-words>
+      Operators first. Agents second. Decks never.
+    </h2>
+    <div class="stats__grid">
+      <div class="stat" data-reveal>
+        <div class="stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 6.5V12l3.6 2.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg></div>
+        <strong>Embed</strong><span>Inside the business, not alongside it</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="80">
+        <div class="stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-6 4 4 7-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <strong>Agents</strong><span>Applied AI that survives a normal Tuesday</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="160">
+        <div class="stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.4l2.6 2.6L16 9.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <strong>Surface → core</strong><span>Website first, then the operations underneath</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="240">
+        <div class="stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.2-2.9 7.4-7 9-4.1-1.6-7-4.8-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <strong>Compound</strong><span>Recurring value, not a project handoff</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── TEAM ─────────────────────────── -->
+<section class="team" id="team">
+  <div class="shell">
+    <div class="team__intro">
+      <span class="eyebrow" data-reveal>The lab</span>
+      <h2 data-reveal data-reveal-delay="40">Built by people who have shipped at scale</h2>
+      <p data-reveal data-reveal-delay="90">
+        Our team has advised at McKinsey, engineered at Google, built a Y Combinator company,
+        and scaled products at Grab. We do not hand you a deck. We rebuild the work with you,
+        and leave agents running in production.
+      </p>
+    </div>
+
+    <div class="team__proof" data-reveal data-reveal-delay="120" aria-label="Background signals">
+      <img src="assets/logos/mckinsey.png" alt="McKinsey &amp; Company" height="42">
+      <img src="assets/logos/google.png" alt="Google" height="32">
+      <img src="assets/logos/ycombinator.png" alt="Y Combinator" height="36" width="36">
+      <img src="assets/logos/grab.png" alt="Grab" height="32">
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── FAQ ─────────────────────────── -->
+<section class="faq" id="faq">
+  <div class="shell faq__grid">
+    <div class="faq__intro">
+      <h2 data-reveal>Questions we get<br />in the first call</h2>
+      <p data-reveal data-reveal-delay="80">Anything else, just ask. We answer quickly, and we'll tell you if a rebuild isn't the right move.</p>
+      <a class="link-arrow" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="120">Talk to the team <i><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.4 3.4L11 7l-3.6 3.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+    </div>
+
+    <div class="faq__list" id="faqList">
+      <details data-reveal>
+        <summary>Do you only rebuild websites?<i></i></summary>
+        <div class="faq__body"><p>The website is often the first visible surface, including e-commerce, but the real work runs deeper into recruiting, workforce, operations and finance. We start where demand is real and the digital layer is weak, then move inward.</p></div>
+      </details>
+      <details data-reveal data-reveal-delay="60">
+        <summary>Are you an advisory firm?<i></i></summary>
+        <div class="faq__body"><p>No. We don't sell decks or one-off recommendations. We embed, rebuild with AI agents, and stay for the compound work. Proposals are design-led and short. You judge the work itself.</p></div>
+      </details>
+      <details data-reveal data-reveal-delay="120">
+        <summary>How involved does our team need to be?<i></i></summary>
+        <div class="faq__body"><p>Deeply. We need operators in the room, access to the tools, and permission to change the process, not just bolt on a bot. A rebuild only consultants understand is just another kind of legacy.</p></div>
+      </details>
+      <details data-reveal data-reveal-delay="180">
+        <summary>What happens after the first launch?<i></i></summary>
+        <div class="faq__body"><p>We keep going. Rebuild Lab is built for recurring relationships: launch one workflow, then improve the next. Clients stay because value compounds, not because of lock-in.</p></div>
+      </details>
+      <details data-reveal data-reveal-delay="240">
+        <summary>Who is on the team?<i></i></summary>
+        <div class="faq__body"><p>Operators and builders with backgrounds across McKinsey, Google, Y Combinator, and Grab. More on the <a href="#team">team section</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── CTA ─────────────────────────── -->
+<section class="cta" id="contact">
+  <canvas class="cta__wave" id="ctaWave" aria-hidden="true"></canvas>
+  <div class="shell cta__inner">
+    <h2 data-split><span>Let's rebuild how</span><span>the business runs</span></h2>
+    <p data-reveal data-reveal-delay="240">Send the website, the workflow that keeps breaking, or just the inbox that never clears.</p>
+    <div class="cta__row" data-reveal data-reveal-delay="320">
+      <a class="btn btn--light btn--lg" href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer"><span>Book a call</span></a>
+      <a class="btn btn--ghost btn--lg" href="mailto:hello@rebuildlab.co"><span>hello@rebuildlab.co</span></a>
+      <a class="btn btn--ghost btn--lg" href="tel:+60176953613"><span>+60 17-695 3613</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────────────── FOOTER ─────────────────────────── -->
+<footer class="foot">
+  <div class="shell foot__grid">
+    <div class="foot__brand">
+      <a class="brand" href="#top">
+        <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M4 20.5 12.5 4l3.6 7-4.6 9h6.4l3.7 7H4Z" fill="currentColor"/>
+          <circle cx="21.2" cy="7.4" r="3.2" fill="currentColor" opacity=".55"/>
+        </svg>
+        <span class="brand__word">Rebuild&nbsp;Lab</span>
+      </a>
+      <p class="foot__note">An AI-native consultancy. We rebuild businesses with AI agents.</p>
+      <div class="pill pill--status"><span class="dot-live"></span> Agents in production <em class="mono">live</em></div>
+    </div>
+
+    <div class="foot__col">
+      <h4>Method</h4>
+      <a href="#diagnose">Diagnose</a><a href="#rebuild">Rebuild</a><a href="#compound">Compound</a><a href="#stack">Scope</a>
+    </div>
+    <div class="foot__col">
+      <h4>Studio</h4>
+      <a href="#proof">Work</a><a href="#team">Team</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="mailto:hello@rebuildlab.co">Careers</a>
+    </div>
+    <div class="foot__col">
+      <h4>Connect</h4>
+      <a href="https://calendar.app.google/irgcpBKvNA6vrJZ38" target="_blank" rel="noopener noreferrer">Book a call</a>
+      <a href="mailto:hello@rebuildlab.co">hello@rebuildlab.co</a>
+      <a href="tel:+60176953613">+60 17-695 3613</a>
+      <a href="https://relocal.co" target="_blank" rel="noopener noreferrer">Relocal</a>
+      <a href="https://trypitch.co" target="_blank" rel="noopener noreferrer">Pitch</a>
+      <a href="https://open.cx" target="_blank" rel="noopener noreferrer">Open</a>
+    </div>
+
+    <div class="foot__sub">
+      <h4>Field notes</h4>
+      <p>Occasional writing on rebuilds that actually shipped.</p>
+      <form class="subscribe" id="subscribe" novalidate>
+        <input type="email" name="email" placeholder="you@company.com" aria-label="Email address" required />
+        <button class="btn btn--light btn--sm" type="submit"><span>Subscribe</span></button>
+      </form>
+      <span class="subscribe__msg" id="subMsg" role="status"></span>
+    </div>
+  </div>
+
+  <div class="shell foot__bottom">
+    <span>© <span id="year">2026</span> Rebuild Lab. All rights reserved.</span>
+    <span><a href="#top">Terms</a> <i>/</i> <a href="#top">Privacy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
