@@ -162,6 +162,27 @@
     track.appendChild(track.firstElementChild.cloneNode(true));
   });
 
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    $$('.marquee').forEach(function (marquee) {
+      var track = marquee.querySelector('.marquee__track');
+      var group = track && track.firstElementChild;
+      if (!group) return;
+      var items = Array.prototype.slice.call(group.children);
+      var minWidth = Math.max(marquee.clientWidth, window.screen.width || 0);
+      for (var i = 0; i < 6 && group.scrollWidth < minWidth; i++) {
+        items.forEach(function (item) {
+          var copy = item.cloneNode(true);
+          copy.setAttribute('aria-hidden', 'true');
+          group.appendChild(copy);
+        });
+      }
+      var twin = group.cloneNode(true);
+      twin.setAttribute('aria-hidden', 'true');
+      track.appendChild(twin);
+      track.style.animationDuration = Math.round(group.scrollWidth / 45) + 's';
+    });
+  }
+
   /* ---------------------------------------------------------
      10. Quote slider (removed with case studies redesign)
      --------------------------------------------------------- */
@@ -263,23 +284,6 @@
       menu.setAttribute('aria-hidden', String(open));
     });
     $$('a', menu).forEach(function (a) { a.addEventListener('click', close); });
-  })();
-
-  /* ---------------------------------------------------------
-     14. Newsletter (front-end only)
-     --------------------------------------------------------- */
-  (function () {
-    var form = $('#subscribe'), msg = $('#subMsg');
-    if (!form) return;
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = form.querySelector('input').value.trim();
-      var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
-      msg.style.color = ok ? '' : '#E9744F';
-      msg.textContent = ok ? "You're on the list. We only send when there's something worth reading."
-                           : 'That email looks off. Mind checking it?';
-      if (ok) form.reset();
-    });
   })();
 
   $('#year').textContent = new Date().getFullYear();
